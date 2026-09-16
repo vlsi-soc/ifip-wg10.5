@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-green">REPORT OF ACTIVITIES</h2>
+                </div>
+                <!-- The Timeline -->
+                <div id="timeline">
+                    <div>
+                      {% for group in reports_by_year %}
+                      <section class="year">
+                          <h3>{{ group.year }}</h3>
+                          <section>
+                              <ul>
+                                  {% for r in group.entries %}
+                                  <li class="prose">
+                                      Link to report
+                                      <a href="{{ r.file }}" target="_blank"><u> {{ r.label }}</u></a>
+                                  </li>
+                                  {% endfor %}
+                              </ul>
+                          </section>
+                      </section>
+                      {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+{% endblock %}

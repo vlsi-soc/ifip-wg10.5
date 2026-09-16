@@ -1,0 +1,72 @@
+# Global site settings shared by every page.
+# Edit this file to change contact info, the header text, or the nav menu -
+# you never need to touch the HTML templates for that.
+
+meta:
+  title: "IFIP - Working Group 10.5"
+  og_title: "IFIP WORKING GROUP 10.5 - Design and Engineering of Electronic Systems"
+  og_description: "IFIP WORKING GROUP 10.5 - Design and Engineering of Electronic Systems"
+  description: "IFIP WORKING GROUP 10.5 - Design and Engineering of Electronic Systems"
+  author: "Anxhela Kazazi"
+  keywords: "IFIP"
+
+header:
+  title: "IFIP WORKING GROUP 10.5"
+  subtitle: "Design and Engineering of Electronic Systems"
+  text: >
+    The Working Group 10.5 "Design and Engineering of Electronic Systems" belongs to the IFIP Technical Committee 10.
+    It was established in 1994 by merging the old 10.2 and 10.5 working groups.
+
+contact:
+  name: "Graziano Pravadelli"
+  email: "graziano.pravadelli@univr.it"
+
+# Shown on both index.html and events.html "Future events" sections so the
+# two pages can never drift out of sync again (they had gone stale before).
+upcoming_event:
+  name: "VLSI-SoC 2026"
+  url: "https://vlsi-soc.github.io/vlsi-soc/"
+  location: "Limassol, Cyprus"
+  date_text: "11-14 October 2026"
+
+nav:
+  - label: "Home"
+    href: "index.html"
+    page: "index"
+  - label: "Officers"
+    href: "officers.html"
+    page: "officers"
+  - label: "Members"
+    href: "members.html"
+    page: "members"
+  - label: "Meetings"
+    href: "meetings.html"
+    page: "meetings"
+  - label: "Reports"
+    href: "reports.html"
+    page: "reports"
+  - label: "Events"
+    href: "events.html"
+    page: "events"
+  - label: "Competences"
+    href: "competences.html"
+    page: "competences"
+  - label: "Video"
+    href: "video.html"
+    page: "video"
+  - label: "IFIP"
+    href: "http://www.ifip.org"
+    external: true
+  - label: "Contacts"
+    href: "#footer"
+
+aims:
+  - The working group aims at providing a forum amongst creative experts to explore problem areas and solutions for the design of such complex electronic systems and also disseminating the solutions to a broader industrial and educational sphere.
+  - Functionality of complex embedded or stand-alone systems, to be applied in areas such as general-purpose computing, telecommunications, automotive, entertainement, and multimedia, may be realized by various combinations of analog and digital hardware and software parts.
+  - Systems can be implemented by single or multiple integrated circuits and software modules that can be either of special purpose, programmable, or reconfigurable.
+  - Electronic system design demands a tight integration on a very large profile of knowledge and skills ranging from hardware and software system architecture to semiconductor physics.
+
+scope_text: >
+  The Working Group is interested in a broad range of topics related to the design and engineering of heterogeneous systems, containing hardware, software, and even mechanical parts. Research interests deal with System Design Methods,
+  Embedded Systems, Modeling and Specification, Design Validation, Formal Methods in Design, Synthesis, Design Environments, Reconfigurable Computing, VLSI Systems and Applications, Physical Design, Test and Testability,
+  Power-aware Design, Analog and Mixed-Signal Systems, Fundamental CAD Algorithms and many other areas.

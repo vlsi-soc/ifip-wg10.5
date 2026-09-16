@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% macro officer_card(o) %}
+                            <div class="col-md-3 txt-center">
+                                <img class="h-16 w-16 rounded-full object-cover" src="{{ o.photo }}" alt="{{ o.name }}" height="100px">
+                                <br>
+                                <p style="font-size:18px;font-weight:200;color:#5e5e5e">
+                                    <b>{{ o.role }}</b>
+                                </p>
+                                <p style="font-weight:200;color:#5e5e5e">
+                                    <i class="fa fa-user" aria-hidden="true"></i> {{ o.name }}<br>
+                                    <i class="fa fa-university" aria-hidden="true"></i> {{ o.institution }}
+                                </p>
+                            </div>
+{% endmacro %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container">
+                <div class="bxshadow-top">
+                    <div class="container" style="padding-top:80px">
+                        <div class="justify-content-center txtcenter">
+                            <h3 class="ops-tt txtcenter c-violet">OFFICERS</h3>
+                            <br>
+                        </div>
+                        <div class="row col-md-16 mt-4 txt-center">
+                            {% for o in officers.chair %}{{ officer_card(o) }}{% endfor %}
+                            {% for o in officers.vice_chairs %}{{ officer_card(o) }}{% endfor %}
+                        </div>
+                        <br>
+                        <div class="row col-md-16 mt-4 txt-center">
+                            {% for o in officers.past_chair %}{{ officer_card(o) }}{% endfor %}
+                            {% for o in officers.awards_committee[:3] %}{{ officer_card(o) }}{% endfor %}
+                        </div>
+                        <br>
+                        <div class="row col-md-16 mt-4 txt-center">
+                            {% for o in officers.awards_committee[3:] %}{{ officer_card(o) }}{% endfor %}
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+{% endblock %}

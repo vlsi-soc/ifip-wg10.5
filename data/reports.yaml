@@ -1,0 +1,87 @@
+# Reports page. Add a new annual report by appending an entry.
+# NOTE: the original site had 6 of these links broken (backslashes instead of
+# forward slashes in the path, e.g. "Reports\IFIP WG 10.5 report 2025.pdf")
+# - fixed here since forward slashes are required in a URL.
+
+reports:
+  - year: 2025
+    label: "2025"
+    file: "Reports/IFIP WG 10.5 report 2025.pdf"
+  - year: 2024
+    label: "2024"
+    file: "Reports/IFIP WG 10.5 report 2024.pdf"
+  - year: 2023
+    label: "2023"
+    file: "Reports/IFIP WG 10.5 report 2023.pdf"
+  - year: 2022
+    label: "2022"
+    file: "Reports/IFIP WG 10.5 report 2022.doc"
+  - year: 2021
+    label: "2021"
+    file: "Reports/IFIP WG 10.5 report 2021.doc"
+  - year: 2019
+    label: "2019"
+    file: "Reports/IFIP WG 10.5 report 2019.doc"
+  - year: 2016
+    label: "2016"
+    file: "Reports/IFIP-WG-10.5-report-2016-09.doc"
+  - year: 2015
+    label: "2015"
+    file: "Reports/IFIP-WG-10.5-report-2015-V2.doc"
+  - year: 2014
+    label: "2014"
+    file: "Reports/IFIP-WG-10.5-report-2014.doc"
+  - year: 2013
+    label: "2013"
+    file: "Reports/IFIP-WG-10.5-report-2013.doc"
+  - year: 2012
+    label: "July 2012"
+    file: "Reports/Report-July2012.doc"
+  - year: 2011
+    label: "July 2011"
+    file: "Reports/Report-July2011.doc"
+  - year: 2010
+    label: "July 2010"
+    file: "Reports/Report-July2010.pdf"
+  - year: 2009
+    label: "2009"
+    file: "Reports/Report-2009.pdf"
+  - year: 2007
+    label: "July 2007"
+    file: "Reports/Report-July2007.pdf"
+  - year: 2007
+    label: "February 2007"
+    file: "Reports/Report-February2007.pdf"
+  - year: 2006
+    label: "January 2006"
+    file: "Reports/Report-January2006.pdf"
+  - year: 2006
+    label: "July 2006"
+    file: "Reports/Report-July2006.pdf"
+  - year: 2005
+    label: "January 2005"
+    file: "Reports/Report-January2005.pdf"
+  - year: 2005
+    label: "August 2005"
+    file: "Reports/Report-August2005.pdf"
+  - year: 2004
+    label: "August 2004"
+    file: "Reports/Report-August2004.pdf"
+  - year: 2003
+    label: "February 2003"
+    file: "Reports/Report-February2003.pdf"
+  - year: 2003
+    label: "July 2003"
+    file: "Reports/Report-July2003.pdf"
+  - year: 2003
+    label: "December 2003"
+    file: "Reports/Report-December2003.pdf"
+  - year: 2002
+    label: "February 2002"
+    file: "Reports/Report-February2002.pdf"
+  - year: 2002
+    label: "July 2002"
+    file: "Reports/Report-July2002.pdf"
+  - year: 2001
+    label: "September 2001"
+    file: "Reports/Report-September2001.pdf"

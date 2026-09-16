@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% macro event_link(e) %}{% if e.url %}<a href="{{ e.url }}" target="_blank"><u>{{ e.name }}</u></a>{% else %}<font color="#0000AA">{{ e.name }}</font>{% endif %}{% endmacro %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-violet">FUTURE EVENTS</h2>
+                    <br>
+                    <br>
+                    <div class="row col-md-12 justify-content-center">
+                        <ul style="text-align:left; margin-left: 1%;">
+                          <li class="prose">
+                              <font color="#0000AA"><a href="{{ site.upcoming_event.url }}">{{ site.upcoming_event.name }}</a></font>
+                              - {{ site.upcoming_event.location }}, {{ site.upcoming_event.date_text }}
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="bg-gray-ns bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-green">PAST SPONSORED EVENTS</h2>
+                </div>
+                <!-- The Timeline -->
+                <div id="timeline">
+                    <div>
+                        {% for group in past_sponsored_by_year %}
+                        <section class="year">
+                            <h3>{{ group.year }}</h3>
+                            <section>
+                                <ul>
+                                  {% for e in group.entries %}
+                                  <li class="prose">
+                                      {{ event_link(e) }}
+                                      - {{ e.text }}{% if e.extra_link %}
+                                      <a href="{{ e.extra_link.url }}" target="_blank"><u>{{ e.extra_link.label }}</u></a>.{% endif %}
+                                  </li>
+                                  {% if not loop.last %}<br>{% endif %}
+                                  {% endfor %}
+                                </ul>
+                            </section>
+                        </section>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        <br>
+        </div>
+
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-violet">PAST CO-SPONSORED EVENTS (without financial implication)</h2>
+                </div>
+                <!-- The Timeline -->
+                <div id="timeline">
+                    <div>
+                        {% for group in past_cosponsored_by_year %}
+                        <section class="year">
+                            <h3>{{ group.year }}</h3>
+                            <section>
+                                <ul>
+                                    {% for e in group.entries %}
+                                    <li class="prose">
+                                        {{ event_link(e) }}
+                                        - {{ e.text }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </section>
+                        </section>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+{% endblock %}

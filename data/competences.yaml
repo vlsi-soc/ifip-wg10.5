@@ -1,0 +1,89 @@
+# Competences page. Add a new topic by appending an entry with the same shape.
+
+intro: >
+  The major competences and research interests of the WG 10.5 members have been classified in the following 12 topics. They are spread among a wide list of application fields, including Aeronautics, aerospace, avionics, Agriculture, Automotive, Biomedical, Communication and telecommunication, Computer vision, Cybersecurity, Design automation, Digital IC design, Digital twins, EDA tools, Efficient hardware architectures, Embedded software, GPUs, Hardware as a Service, Healthcare and telemedicine, Heterogeneous architectures, Heterogeneous systems, High-performance computing, Human pose estimation, Image processing, Industrial automation, Macromodeling and interconnect modeling, Memories, Neurochips, Pre-application (basic research), Processors, Quantum computing, Reconfigurable and smart surfaces, Reliability, Robotics, Semiconductor industry, Smart cities, Smart systems, Transportation.
+
+topics:
+  - topic: "Applications and Architectures for AI and ML"
+    leaders: ["Luc Claesen", "Luis Miguel Silveira"]
+    subtopics: ["Applicaiton of AI and ML", "Architechtures  for AI and ML"]
+    description: >
+      This topic deals with advances in the field, focusing on algorithms for developing machine learning models, AI-inspired computation models, approximate computing, and security and privacy issues related to AI and ML applications. It also covers design automation at the intersection of ML/AI algorithms and hardware. Key areas include hardware-efficient architectures for deep learning inference and training, power and hardware-efficient computation methods, low bit-width implementations for activations and weights, dynamic evaluation of neural network models, and efficient methods for few- and one-shot learning algorithms.
+    members: ["Andrea Calimera", "Florenc Demrozi", "Ian O'Connor", "Ioana Vatajelu", "Luc Claesen", "Luis Miguel Silveira", "Matthew Guthaus", "Nicola Bombieri", "Nikil Dutt", "Said Hamdioui", "Srinivas Katkoori"]
+
+  - topic: "Communication architectures and technologies"
+    leaders: ["Dimitrios Soudris", "Juergen Becker"]
+    subtopics: ["5G/6G technologies", "RF", "Network on Chip"]
+    description: >
+      This topic deals with advancing communication architectures and technologies, with a special emphasis on 5G/6G networks. It includes innovative solutions in radio frequency (RF) technologies to enhance wireless communication systems, the design and optimization of network-on-chip (NoC) architectures, and ensuring efficient data transfer within complex systems. It also covers next-generation communication by integrating cutting-edge RF technologies into future networks.
+    members: ["Dimitrios Soudris", "Giovanni De Micheli", "Juergen Becker", "Salvador Mir"]
+
+  - topic: "Computing paradigms"
+    leaders: ["Ian O'Connor", "Ioana Vatajelu"]
+    subtopics: ["Quantum computing", "Approximate computing", "Evolutionary computing", "In-memory computing"]
+    description: >
+      This topic deals with systems and accelerators based on novel computing paradigms, including associated modeling, validation, emulation, programming, integration, design, and exploration techniques. It covers emerging models of computation such as approximate computing, in- and near-memory computing, machine learning, reversible computing, evolutionary computing, and quantum computing, with a focus on architectures, encryption, error correction, and cryogenic computing.
+    members: ["Ian O'Connor", "Ioana Vatajelu", "Leandro Soares Indrusiak", "Nikil Dutt", "Salvador Mir", "Srinivas Katkoori"]
+
+  - topic: "Digital circuits design and synthesis"
+    leaders: ["H. Fatih Ugurdag", "Ricardo Reis"]
+    subtopics: ["Digital circuits", "High-level and logic-level synthesis", "Reconfigurable architectures and systems", "SoC"]
+    description: >
+      This topic deals with the design of digital VLSI systems, which demands a complex design flow from high-level design description to layout description. The flow includes synthesis, verification, optimization, and estimation tools. Optimization is necessary at all levels of design abstraction, with a wide range of possible architectures to implement the same digital system, targeting low power, high performance, and resource efficiency. System-on-Chip optimization increasingly relies on hardware accelerators.
+    members: ["Andrea Calimera", "Eugenio Villar", "Giovanni De Micheli", "H. Fatih Ugurdag", "Ian O'Connor", "Katell Morin-Allory", "Ricardo Reis", "Victor Grimblatt"]
+
+  - topic: "Embedded system design"
+    leaders: ["Eugenio Villar", "Nicola Bombieri"]
+    subtopics: ["Embedded software and toolchains", "Edge computing", "Cloud computing", "Parallel computing and architectures"]
+    description: >
+      This topic deals with embedded systems design, focusing on the modeling, analysis, design, verification, and deployment of application-specific electronic systems that interact with their physical environment. The goal is to choose and design the proper combination of hardware and software components to meet system-level goals like speed, efficiency, reliability, security, and safety. Areas of interest include real-time systems, cyber-physical systems, parallel computing, networked systems, and dependable systems, with emphasis on model-based design, verification, and embedded software platforms.
+    members: ["Andrea Calimera", "Eugenio Villar", "Graziano Pravadelli", "Leandro Soares Indrusiak", "Nicola Bombieri", "Nikil Dutt", "Said Hamdioui", "Tiziana Margaria"]
+
+  - topic: "Emerging technologies and applications"
+    leaders: ["Matthew R.Guthaus", "Said Hamdioui"]
+    subtopics: ["Emerging technologies"]
+    description: >
+      This topic deals with emerging technologies such as artificial intelligence, machine learning, deep learning, edge computing, quantum computing, augmented reality, virtual reality, big data, and blockchain. Applications include the Internet of Things (IoT), autonomous vehicles, agrifood, recommendation systems, robotics, personalized healthcare, smart homes, and smart cities. From the technological point of view, it also encompasses 3D integration, chiplets, non-volatile memories, silicon photonics, design using advanced transistors (sub 2nm, CFETs, 2D material based).
+    members: ["Giovanni De Micheli", "Ian O'Connor", "Ioana Vatajelu", "Matthew R.Guthaus", "Nicola Bombieri", "Nikil Dutt", "Said Hamdioui", "Salvador Mir", "Sara Vinco", "Tiziana Margaria"]
+
+  - topic: "Low-power, energy-efficient and thermal-aware design"
+    leaders: ["Andrea Calimera", "Pierre-Emmanuel Gaillardon"]
+    subtopics: ["Cryogenic processors", "Low-power design"]
+    description: >
+      This topic deals with algorithms, design techniques, circuits, and tools for modeling, estimating, or optimizing power consumption and thermal performance in electronic circuits and systems. It covers ultra-low-power systems (e.g., for portable/wearable devices at the edge of the IoT) to high-performance systems (like data centers) and large-scale battery systems (such as electric vehicles). Areas of interest include dynamic/adaptive management techniques for temperature/power/energy optimization, cross-layer hardware/software optimization strategies, and new circuits and architectures for low-power, energy-efficient distributed, and heterogeneous systems.
+    members: ["Andrea Calimera", "Eugenio Villar", "Florenc Demrozi", "Ian O'Connor", "Pierre-Emmanuel Gaillardon", "Salvador Mir", "Srinivas Katkoori"]
+
+  - topic: "Security"
+    leaders: ["Ibrahim Elfadel", "Srinivas Katkoori"]
+    subtopics: ["Hardware security", "IP Security", "Secure Hardware Synthesis"]
+    description: >
+      This topic deals with cybersecurity issues related to the hardware infrastructure underlying computing, storage, or communication systems, particularly when hardware can no longer be considered a root of trust. It covers hardware threats and vulnerabilities, including physical attacks, Trojan horses, IP piracy, IC counterfeiting, backdoors, tampering, and reverse engineering. It also addresses hardware Trojan detection, side-channel attacks, and countermeasures, as well as the security of emerging technologies and physically unclonable functions (PUFs).
+    members: ["Ibrahim Elfadel", "Ioana Vatajelu", "Srinivas Katkoori"]
+
+  - topic: "Sensing and signal processing technologies"
+    leaders: ["Chi- Ying Tsui", "Florenc Demrozi"]
+    subtopics: ["Sensors and biosensors", "Signal processing", "Circuits and architectures for signal processing"]
+    description: >
+      This topic deals with sensing and signal processing technologies within intelligent environments and bio-related well-being applications. It explores the development and integration of sensor technologies, innovative signal processing techniques, and energy-efficient read-out circuits for environmental and in-body sensing applications. It also examines the design and architecture of signal processing systems tailored for smart environments, ensuring scalability, reliability, and energy efficiency.
+    members: ["Chi- Ying Tsui", "Florenc Demrozi", "Graziano Pravadelli", "Ioana Vatajelu"]
+
+  - topic: "Smart systems, devices and applications"
+    leaders: ["Saraju Mohanty", "Victor Grimblatt"]
+    subtopics: ["IoT, industrial IoT, IoMT", "Smart systems", "Cyber-physical systems", "Big data"]
+    description: >
+      This topic deals with IoT systems and applications, focusing on smart systems (e.g., smart cities, smart cars) and smart applications (e.g., smart irrigation, smart wildfire detection). It also covers systems and applications based on big data, cyber-physical systems, and smart sensors for IoT applications, including hardware and software security for these systems.
+    members: ["Florenc Demrozi", "Graziano Pravadelli", "Leandro Soares Indrusiak", "Nicola Bombieri", "Nikil Dutt", "Sara Vinco", "Saraju Mohanty", "Srinivas Katkoori", "Tiziana Margaria", "Victor Grimblatt"]
+
+  - topic: "System specification, simulation and verification"
+    leaders: ["Katell Morin-Allory", "Tiziana Margaria"]
+    subtopics: ["Simulation", "Verification", "System specification and modelling", "Hardware description languages", "Prototyping and virtual prototyping"]
+    description: >
+      This topic deals with modeling and specification methodologies for complex HW-SW systems, including simulation-based, semi-formal, or formal validation and verification of SoCs and emerging architectures at any level. It covers testbench and assertion generation, coverage metrics, checker synthesis and optimization, and acceleration-driven and emulation-based approaches for verification and validation.
+    members: ["Eugenio Villar", "Graziano Pravadelli", "Katell Morin-Allory", "Sara Vinco", "Tiziana Margaria"]
+
+  - topic: "Test and dependability"
+    leaders: ["Matteo Sonza Reorda", "Salvador Mir"]
+    subtopics: ["Design for testability", "Fault tolerance", "Fault modelling", "Testing", "Reliability"]
+    description: >
+      This topic deals with test and dependability of digital, analog/RF, mixed-signal, and embedded systems. It covers defect and fault modeling, fault simulation, test generation, design-for-test, on-line test, test infrastructure, failure analysis, fault diagnosis, fault tolerance, and functional safety and reliability.
+    members: ["Ioana Vatajelu", "Katell Morin-Allory", "Matteo Sonza Reorda", "Said Hamdioui", "Salvador Mir"]

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px; padding-bottom: 15px;">
+                <div class="justify-content-center txtcenter">
+                    <h3 class="ops-tt txtcenter c-violet">VIDEOS</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="container" style="padding-left:50px; padding-right: 30px;">
+                {% for v in videos %}
+                <div class="row" style="padding-top:45px; padding-bottom:45px;">
+                    <div class="col-lg-6">
+                        <div class="embed-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list={{ v.youtube_playlist }}"
+                        title="YouTube video player" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="about-text">
+                            <h2 class="prose-2 c-blue">
+                                {{ v.title }}
+                            </h2>
+                            <p class="prose about-content">{{ v.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% if not loop.last %}<hr class="solid">{% endif %}
+                {% endfor %}
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+{% endblock %}

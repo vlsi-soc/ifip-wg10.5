@@ -1,0 +1,118 @@
+# Events page. "Future events" is NOT listed here - it's driven by
+# site.yaml's `upcoming_event` so index.html and events.html can never go
+# stale/out-of-sync again (the old site had events.html still advertising
+# VLSI-SoC 2025 as "future" a year after it happened).
+#
+# past_sponsored / past_cosponsored: add a new event by appending an entry
+# with the right `year`; entries are grouped and sorted automatically.
+
+past_sponsored:
+  - {year: 2025, name: "VLSI-SoC'2025", url: "https://asic-chile.cl/vlsisoc/", text: "33rd IFIP/IEEE International Conference on Very Large Scale Integration, October 12-15, Puerto Varas, Chile"}
+
+  - {year: 2024, name: "VLSI-SoC'2024", url: "https://vlsisoc2024.nl/index.php", text: "32th IFIP/IEEE International Conference on Very Large Scale Integration, October 6-9, Tanger, Morocco"}
+  - {year: 2024, name: "SBCCI 2024", url: "https://ieee-cas.org/event/conference/37th-symposium-integrated-circuits-and-systems-design", text: "37th Symposium on Integrated Circuits and System Design, September 2-6, Paraiba, Brasil"}
+  - {year: 2024, name: "FDL 2024", url: "https://www.fdl-conference.com/index.html", text: "27th Forum on specification and Design Languages (FDL), September 4-6, Stockholm, Sweden"}
+
+  - {year: 2023, name: "VLSI-SoC'2023", url: "https://sites.google.com/view/vlsi-soc2023/home?pli=1", text: "31th IFIP/IEEE International Conference on Very Large Scale Integration, October 16-18, Sharjah, UAE"}
+  - {year: 2023, name: "SBCCI 2023", url: "https://dippg.cefet-rj.br/chipinrio/index.php/sbcci2023/", text: "36th Symposium on Integrated Circuits and System Design, August 28- September 1, Rio de Janeiro, Brasil"}
+  - {year: 2023, name: "FDL 2023", url: "https://www.fdl-conference.com/index.html", text: "26th Forum on specification and Design Languages (FDL), September 13-15, Turin, Italy"}
+
+  - {year: 2022, name: "VLSI-SoC'2022", url: "https://vlsisoc2022.com/", text: "30th IFIP/IEEE International Conference on Very Large Scale Integration, October 3-5, Patras, Greece"}
+  - {year: 2022, name: "ACCAD 2022", url: "https://sites.google.com/view/accad2022/", text: "Accelerator CAD workshop, co-located with ICCAD, San Diego, October 30 - November 3, 2022"}
+  - {year: 2022, name: "Tribute to François Anceau", url: "https://www.ufrgs.br/anceauworkshop/", text: "-- \"Trends on Computing Systems Day -- , 14th June 2022, Grenoble, France\"", extra_link: {label: "(Link to program)", url: "file/F_Anceau_day_program_final.pdf"}}
+  - {year: 2022, name: "FDL 2022", url: "https://fdl-conference.com/FDL2022/index.html", text: "25th Forum on specification and Design Languages (FDL), September 14-16, Linz, Austria"}
+
+  - {year: 2021, name: "VLSI-SoC'2021", url: "https://vlsisoc.github.io/", text: "29th IEEE/IFIP International Conference on Very Large Scale Integration, 4-8 October 2021, Singapore (virtual event)"}
+  - {year: 2021, name: "FDL 2021", url: "https://fdl-conference.com/FDL2021/index.html", text: "24th Forum on specification and Design Languages (FDL), September 8-11, Antibes, France"}
+
+  - {year: 2020, name: "VLSI-SoC'2020", url: "https://vlsisoc2020.eng.utah.edu/", text: "28th IEEE/IFIP International Conference on Very Large Scale Integration, 5-9 October 2020, Salt Lake City, USA (virtual event)"}
+  - {year: 2020, name: "FDL 2020", url: "https://fdl-conference.com/FDL2020/index.html", text: "23th Forum on specification and Design Languages (FDL), September 15-17, Kiel, Germany"}
+
+  - {year: 2019, name: "VLSI-SoC'2019", url: "https://vlsi-soc.pe/", text: "27th IEEE/IFIP International Conference on Very Large Scale Integration, 6-9 October 2019, Cusco, Perù."}
+
+  - {year: 2018, name: "VLSI-SoC'2018", url: "http://vlsi-soc.di.univr.it/", text: "26th IEEE/IFIP International Conference on Very Large Scale Integration, 8-10 October 2018, Verona, Italy."}
+
+  - {year: 2017, name: "VLSI-SoC'2017", url: "http://vlsisoc2017.ozyegin.edu.tr/prevfuture-conferences/", text: "25th IEEE/IFIP International Conference on Very Large Scale Integration, Abu Dhabi, Arab Emirates, October 23-25, 2017."}
+
+  - {year: 2016, name: "VLSI-SoC'2016", url: "http://www.vlsi-soc.com/Previous_conferences.html", text: "24th IEEE/IFIP International Conference on Very Large Scale Integration, Tallinn, Estonia, September 26-28, 2016."}
+
+  - {year: 2015, name: "VLSI-SoC'2015", url: "http://www.vlsi-soc.com/Previous_conferences.html", text: "23rd IEEE/IFIP International Conference on Very Large Scale Integration, Daejeon, Korea, October 5-7, 2015."}
+
+  - {year: 2014, name: "VLSI-SoC'2014", url: "http://www.vlsi-soc.com/Previous_conferences.html", text: "22nd IEEE/IFIP International Conference on Very Large Scale Integration, Playa del Carmen, Mexico, October 6-8, 2014."}
+
+  - {year: 2013, name: "VLSI-SoC'2013", url: "http://www.vlsi-soc.com/Previous_conferences.html", text: "21st IEEE/IFIP International Conference on Very Large Scale Integration, Istanbul, Turkey, October 7-9, 2013."}
+
+  - {year: 2012, name: "VLSI-SoC'2012", url: "http://vlsisoc2012.soe.ucsc.edu/", text: "20th IFIP International  Conference on Very Large Scale Integration. Santa Cruz, USA, October 7-10, 2012."}
+
+  - {year: 2011, name: "VLSI-SoC'2011", url: "http://www.ee.cuhk.edu.hk/vlsisoc2011/", text: "19th IFIP International  Conference on Very Large Scale Integration. Hong Kong, China,  October 3-5, 2011."}
+
+  - {year: 2010, name: "VLSI-SoC'2010", url: "http://147.96.81.28/", text: "18th IFIP International  Conference on Very Large Scale Integration. Madrid, Spain,  September 27-29, 2010."}
+
+  - {year: 2009, name: "VLSI-SoC'2009", url: "http://www.inf.ufrgs.br/vlsisoc/", text: "17th IFIP International  Conference on Very Large Scale Integration. Florianópolis, Brazil,  October 12-14, 2009."}
+
+  - {year: 2008, name: "VLSI-SoC'2008", url: "http://vlsi.ee.duth.gr/vlsisoc-2008/", text: "16th IFIP International  Conference on Very Large Scale Integration. Rhodes, Greece,  October 13-15, 2008."}
+
+  - {year: 2007, name: "VLSI-SoC'2007", url: "http://www.vlsisoc2007.gatech.edu", text: "15th IFIP International  Conference on Very Large Scale Integration. Atlanta, USA,  October 15-17, 2007."}
+  - {year: 2007, name: "IESS'2007", url: "http://www.iess.org", text: "2nd International Embedded Systems Symposium. Irvine, USA, May 29 - June 1, 2007."}
+
+  - {year: 2006, name: "VLSI-SoC'2006", url: "http://tima.univ-grenoble-alpes.fr/conferences/VLSI-SoC06/index.html", text: "14th IFIP International  Conference on Very Large Scale Integration. Nice, France,  October 16-18 2006."}
+  - {year: 2006, name: "DIPES'2006", url: "http://www.c-lab.de/dipes", text: "Workshop on Distributed and Parallel Embedded Systems, Braga, Portugal, October 11-13 2006."}
+
+past_cosponsored:
+  - {year: 2022, name: "FDL 2022", url: "https://fdl-conference.com/", text: "Forum on specification & Design Languages, September 14-16, 2022, Linz, Austria"}
+  - {year: 2022, name: "SBCCI 2022", url: "https://www.ufrgs.br/chip-in-the-minuano/sbcci2022/", text: "35th SBC/SBMicro/IEEE/ACM Symposium on Integrated Circuits and Systems Design,August 22-26, 2022, Virtual from Minuano"}
+
+  - {year: 2021, name: "FDL 2021", url: "https://fdl-conference.com/FDL2021/index.html", text: "Forum on specification & Design Languages, September 8-10, 2021, Antibes, France"}
+  - {year: 2021, name: "SBCCI 2021", url: "https://sbmicro.org.br/chip-in-the-fields-2021/SBCCI2021", text: "34th Symposium on Integrated Circuits and Systems Design, August 23 to 27, 2021, Virtual conference"}
+
+  - {year: 2020, name: "FDL 2020", url: "https://fdl-conference.com/FDL2020/index.html", text: "Forum on specification & Design Languages, September 15-17, 2020, Kiel, Germany"}
+  - {year: 2020, name: "SBCCI 2020", url: "https://sbmicro.org.br/chip-in-the-fields/SBCCI2020", text: "34th Symposium on Integrated Circuits and Systems Design, August 24 to 28, 2020, Virtual conference"}
+
+  - {year: 2019, name: "FDL 2019", url: "https://fdl-conference.com/FDL2019/index.html", text: "Forum on specification & Design Languages, Southampton, September 2-4, 2019, United Kingdom"}
+  - {year: 2019, name: "SBCCI 2019", url: "http://www.psi.poli.usp.br/chipinsampa/sbcci2019/", text: "32nd Symposium on Integrated Circuits and Systems Design, 26 August 2019 - 30 August 2019, São Paulo, Brazil"}
+
+  - {year: 2018, name: "FDL 2018", url: "https://fdl-conference.com/FDL2018/index.html", text: "Forum on specification & Design Languages, September 10-12, 2018, Munich, Germany"}
+  - {year: 2018, name: "SBCCI 2018", url: "https://ieee-cas.org/event/conference/2018-31st-symposium-integrated-circuits-and-systems-design-0", text: "31st Symposium on Integrated Circuits and Systems Design, 4 December 2017 - 6 December 2017, Cancun, Mexico"}
+
+  - {year: 2017, name: "FDL 2017", url: null, text: "Forum on Specification & Design Languages, September 18-20, 2017, Verona, Italy."}
+  - {year: 2017, name: "SBCCI 2017", url: null, text: "30th Symposium on Integrated Circuits and Systems Design, Aug. 28 - Sept. 1, 2017, Fortaleza, Brazil."}
+
+  - {year: 2016, name: "FDL 2016", url: null, text: "Forum on Specification & Design Languages, September 14-16, 2016, Bremen, Germany."}
+  - {year: 2016, name: "SBCCI 2016", url: null, text: "29th Symposium on Integrated Circuits and Systems Design, Aug. 29 - Sept. 3, 2016, Belo Horizonte, Brazil."}
+
+  - {year: 2015, name: "FDL 2015", url: null, text: "Forum on Specification & Design Languages, September 14-16, 2015, Barcelona, Spain."}
+  - {year: 2015, name: "SBCCI 2015", url: "http://www.chipinbahia.eng.ufba.br/sbcci-2015/home", text: "28th Symposium on Integrated Circuits and Systems Design, Aug. 31 - Sept. 4, 2015, Salvador de Bahia, Brazil."}
+
+  - {year: 2014, name: "FDL 2014", url: "http://ecsi.org//fdl-2014", text: "Forum on Specification & Design Languages, October 14-16, 2014 Munich, Germany."}
+  - {year: 2014, name: "SBCCI 2014", url: "http://www.chip-in-aracaju.ufs.br/sbcci.php", text: "27th Symposium on Integrated Circuits and Systems Design, Sept 1-5, 2014, Aracaju, Brazil."}
+
+  - {year: 2013, name: "FDL'2013", url: "http://www.ecsi.org/fdl", text: "Forum on specification & Design Languages. Paris, France, September 24-26, 2013."}
+  - {year: 2013, name: "SBCCI'2013", url: "http://cobre.eletrica.ufpr.br/chipin/sbcci.html", text: "26th Symposium on Integrated Circuits and Systems Design. Curitiba, Brazil, September 2-6, 2013."}
+
+  - {year: 2012, name: "FDL'2012", url: "http://www.ecsi.org/fdl", text: "Forum on specification & Design Languages. Vienna, Austria, September 18-20, 2012."}
+  - {year: 2012, name: "SBCCI'2012", url: "http://www.sbc.org.br/sbcci", text: "25th Symposium on Integrated Circuits and Systems Design. Brasília, Brazil, August 30 - September 2, 2012."}
+  - {year: 2012, name: "DATE 2012", url: null, text: "Design, Automation and Test in Europe. Dresden, Germany, March 12-16."}
+
+  - {year: 2011, name: "SBCCI'2011", url: "http://www.sbc.org.br/sbcci", text: "24th Symposium on Integrated Circuits and Systems Design. João Pessoa, Brazil, August 30 - September 2, 2011."}
+  - {year: 2011, name: "DATE'2011", url: "http://www.date-conference.com/", text: "Design, Automation and Test in Europe. Grenoble, France, March 14-18, 2011."}
+
+  - {year: 2010, name: "FDL'2010", url: "http://www.ecsi.org/fdl2010", text: "Forum on Design Languages. Southampton, UK, September 14-16, 2010."}
+  - {year: 2010, name: "DATE'2010", url: "https://past.date-conference.com/date10/", text: "Design, Automation and Test in Europe. Dresden, Germany, March 8-12, 2010."}
+
+  - {year: 2009, name: "FDL'2009", url: "http://www.ecsi-association.org/ecsi/fdl/fdl08/", text: "Forum on Design Languages. Sophia Antipolis, France, September 22-24, 2009."}
+  - {year: 2009, name: "DATE'2009", url: "http://www.date-conference.com/date09/", text: "Design, Automation and Test in Europe. Nice, France, April 20-24, 2009."}
+
+  - {year: 2008, name: "CODES+ISSS'2008", url: "http://www.codes-isss.org/", text: "International Conference on Hardware/Software Codesign and System Synthesis. Atlanta, USA, October 19-24, 2008."}
+  - {year: 2008, name: "FDL'2008", url: "http://www.ecsi-association.org/ecsi/fdl/fdl08/", text: "Forum on Design Languages. Stuttgart, Germany, September 23-25, 2008."}
+  - {year: 2008, name: "SBCCI'2008", url: "http://www.sbc.org.br/sbcci", text: "21st Symposium on Integrated Circuits and Systems Design. Gramado, Brazil, September 1-4, 2008."}
+  - {year: 2008, name: "DATE'2008", url: "http://www.date-conference.com/", text: "Design, Automation and Test in Europe. Munich, Germany, March 10-14, 2008."}
+
+  - {year: 2007, name: "CODES+ISSS'2007", url: "http://www.ida.liu.se/conferences/codes/", text: "International Conference on Hardware/Software Codesign and System Synthesis. Salzburg, Austria, September 30 - October 5, 2007."}
+  - {year: 2007, name: "FDL'2007", url: "http://www.ecsi-association.org/ecsi/fdl/fdl07/", text: "Forum on Design Languages. Barcelona, Spain, September 18-20, 2007."}
+  - {year: 2007, name: "SBCCI'2007", url: "http://www.sbc.org.br/sbcci", text: "20th Symposium on Integrated Circuits and Systems Design. Rio de Janeiro, Brazil, September 3-6, 2007."}
+  - {year: 2007, name: "DATE'2007", url: "http://www.date-conference.com", text: "Design, Automation and Test in Europe. Nice, France, April 16-20, 2007."}
+
+  - {year: 2006, name: "CODES+ISSS'2006", url: "http://www.codes-isss.org", text: "International Conference on Hardware/Software Codesign and System Synthesis. Seoul, Korea, October 22-25, 2006."}
+  - {year: 2006, name: "FDL'2006", url: "http://www.ecsi-association.org/ecsi/fdl/fdl06/", text: "Forum on Design Languages. Darmstadt, Germany, September 19-22, 2006."}
+  - {year: 2006, name: "SBCCI'2006", url: "http://www.sbc.org.br/sbcci", text: "19th Symposium on Integrated Circuits and Systems Design. Ouro Preto, Brazil, August 28 - September 1, 2006."}
+  - {year: 2006, name: "DATE'2006", url: "http://www.date-conference.com", text: "Design, Automation and Test in Europe. Munich, Germany, March 6-10 2006."}

@@ -1,0 +1,8 @@
+# Video page. Add a new playlist/video by appending an entry.
+
+videos:
+  - title: "Tribute to François Anceau"
+    description: >
+      IFIP WG 10.5 - Tribute to François Anceau - 14/06/2022
+      (This is a playlist of videos, press on the upper right icon to visualize all videos.)
+    youtube_playlist: "PL8eqNBn938AL8r1YmRR2bJcewTpwxuu3I"

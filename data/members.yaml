@@ -1,0 +1,79 @@
+# Members page. Each entry needs: title (Prof./Dr./etc.), name, institution.
+# Add a new member by appending an entry to the right list below.
+
+ordinary:
+  - {title: "Prof.", name: "Lutfi Albasha", institution: "American University of Sharjah, UAE"}
+  - {title: "Prof.", name: "David Atienza", institution: "Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland"}
+  - {title: "Prof.", name: "Jose L. Ayala", institution: "Complutense University of Madrid, Spain"}
+  - {title: "Prof.", name: "Juergen Becker", institution: "Karlsruhe Institute of Technology KIT, Germany"}
+  - {title: "Prof.", name: "Nicola Bombieri", institution: "University of Verona, Italy"}
+  - {title: "Dr.", name: "Letícia Maria Bolzani Pöhls", institution: "Leibniz Institute for High Performance Microelectronics, Germany"}
+  - {title: "Prof.", name: "Andrea Calimera", institution: "Politécnico de Torino, Italy"}
+  - {title: "Prof.", name: "Yuanqing Cheng", institution: "Beijing, China"}
+  - {title: "Prof.", name: "Luc Claesen", institution: "University Hasselt, Belgium"}
+  - {title: "Prof.", name: "Ayse Coskun", institution: "Boston University, U.S.A."}
+  - {title: "Prof.", name: "Giovanni De Micheli", institution: "Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland"}
+  - {title: "Prof.", name: "Florenc Demrozi", institution: "University of Stavanger, Norway."}
+  - {title: "Prof.", name: "Nikil D. Dutt", institution: "University of California at Irvine, U.S.A."}
+  - {title: "Prof.", name: "Ibrahim Elfadel", institution: "Masdar Institute, Abu Dhabi"}
+  - {title: "Prof.", name: "Masahiro Fujita", institution: "University of Tokyo, Japan"}
+  - {title: "Prof.", name: "Pierre-Emmanuel Gaillardon", institution: "University of Utah, U.S.A."}
+  - {title: "Dr.", name: "Dan Gale", institution: "Queen's University, Canada"}
+  - {title: "Dr.", name: "Samuele Germiniani", institution: "UniMarconi, Italy"}
+  - {title: "Prof.", name: "Manfred Glesner", institution: "Darmstadt University of Technology, Germany"}
+  - {title: "Dr.", name: "Victor Grimblatt", institution: "Synopsys, Chile"}
+  - {title: "Prof.", name: "Said Hamdioui", institution: "TU Delft, Netherlands"}
+  - {title: "Prof.", name: "Michael Hübner", institution: "Institute of Technology, Germany"}
+  - {title: "Prof.", name: "Masaharu Imai", institution: "Osaka University, Japan"}
+  - {title: "Dr.", name: "Ahmed Jerraya", institution: "CEA-LETI, France"}
+  - {title: "Prof.", name: "Jing-Yang Jou", institution: "Jou National Chiao Tung Universit, Taiwan"}
+  - {title: "Prof.", name: "Srinivas Katkoori", institution: "University of South Florida, USA"}
+  - {title: "Prof.", name: "Odysseas Koufopavlou", institution: "University of Patras, Greece"}
+  - {title: "Prof.", name: "Enrico Macii", institution: "Politécnico de Torino, Italy"}
+  - {title: "Prof.", name: "Tiziana Margaria", institution: "University of Limerick, Ireland"}
+  - {title: "Dr.", name: "Salvador Mir", institution: "CNRS / Université Grenoble Alpes, France"}
+  - {title: "Prof.", name: "Saraju Mohanty", institution: "University of North Texas, USA"}
+  - {title: "Prof.", name: "Katell Morin-Allory", institution: "Grenoble INP / Université Grenoble Alpes, France"}
+  - {title: "Prof.", name: "Wolfgang Nebel", institution: "Carl-v.-Ossietzky-Universität Oldenburg, Germany"}
+  - {title: "Prof.", name: "Ian O'Connor", institution: "Ecole Centrale de Lyon Lyon Institute of Nanotechnology, France"}
+  - {title: "Dr.", name: "Hillel Ofek", institution: "Sagantec, U.S.A."}
+  - {title: "Prof.", name: "Maciej Ogorzalek", institution: "Jagiellonian University, Poland"}
+  - {title: "Prof.", name: "Luciano Ost", institution: "University of Leicester, UK"}
+  - {title: "Prof.", name: "Adam Pawlak", institution: "Silesian University of Technology, Poland"}
+  - {title: "Prof.", name: "Graziano Pravadelli", institution: "University of Verona, Italy"}
+  - {title: "Prof.", name: "Franz J. Rammig", institution: "Universität Paderborn, Germany"}
+  - {title: "Prof.", name: "Ricardo Reis", institution: "Universidade Federal do Rio Grande do Sul, Brazil"}
+  - {title: "Prof.", name: "Michel Robert", institution: "LIRMM, France"}
+  - {title: "Prof.", name: "Donatella Sciuto", institution: "Politecnico di Milano, Italy"}
+  - {title: "Prof.", name: "Carlo Silva", institution: "Pontificia Universidad Católica del Perú, Peru"}
+  - {title: "Prof.", name: "Luis Miguel Silveira", institution: "INESC, Portugal"}
+  - {title: "Prof.", name: "Leandro Soares Indrusiak", institution: "University of York, UK"}
+  - {title: "Prof.", name: "Matteo Sonza Reorda", institution: "Politécnico de Torino, Italy"}
+  - {title: "Prof.", name: "Dimitrios Soudris", institution: "National Technical University of Athens, Greece"}
+  - {title: "Prof.", name: "Alexander Stempkovsky", institution: "Research Institute IPPM, Russia"}
+  - {title: "Prof.", name: "Lionel Torres", institution: "University of Montpellier, France"}
+  - {title: "Prof.", name: "Chi-Ying Tsui", institution: "Dept of Electronic & Computer Engineering, HKUST, Hong Kong"}
+  - {title: "Prof.", name: "H. Fatih Ugurdag", institution: "Ozyegin University, Istanbul, Turkey"}
+  - {title: "Dr.", name: "Elena-Ioana Vatajelu", institution: "CNRS / Université Grenoble Alpes, France"}
+  - {title: "Prof.", name: "Eugenio Villar", institution: "University of Cantabria, Spain"}
+  - {title: "Prof.", name: "Sara Vinco", institution: "Politecnico di Torino, Italy"}
+  - {title: "Prof.", name: "Akihiko Yamada", institution: "Computer Systems and Media Laboratory, Japan"}
+
+honorary:
+  - {title: "Dr.", name: "David Agnew", institution: "Bell Northern Research, Ottawa, Ontario, CA"}
+  - {title: "Prof.", name: "Dominique Borrione", institution: "Retired from Université Grenoble Alpes, France"}
+  - {title: "Prof.", name: "Kiyoung Choi", institution: "Choi Seoul National University, Korea"}
+  - {title: "Prof.", name: "Werner Damm", institution: "Universität Oldenburg, Germany"}
+  - {title: "Dr.", name: "Joe Damore", institution: "Dutchess Community College, Poughkeepsie, NY, U.S.A."}
+  - {title: "Dr.", name: "John Willis", institution: "FTL Systems, U.S.A."}
+  - {title: "Prof.", name: "Carlos Delgado Kloos", institution: "Universidad Carlos III de Madrid, Spain"}
+  - {title: "Dr.", name: "Osamu Karatsu", institution: "SRI International, Japan"}
+  - {title: "Prof.", name: "Flávio Rech Wagner", institution: "Universidade Federal do Rio Grande do Sul, Brazil"}
+  - {title: "Dr.", name: "Peter Schwarz", institution: "Fraunhofer Institute for Integrated Circuits, Germany"}
+  - {title: "Dr.", name: "P. A. Subrahmanyam", institution: "Consultant, U.S.A."}
+  - {title: "Dr.", name: "Ronald Waxman", institution: "EDA Standards Consulting Retired from Univ.Virginia, U.S.A."}
+
+passed_away:
+  - {title: "Prof.", name: "Reiner W. Hartenstein", institution: "Universität Kaiserslautern, Germany"}
+  - {title: "Prof.", name: "Klaus Mueller-Glaser", institution: "Universität Karlsruhe, Germany"}
+  - {title: "Prof.", name: "Wolfgang Rosenstiel", institution: "University Tübingen Sand 13 72076 Tübingen, Germany"}

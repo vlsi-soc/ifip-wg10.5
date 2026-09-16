@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% macro member_list(members) %}
+                <ul style="color:#477ED2;text-align:left; margin-left: 1%;">
+                    {% for m in members %}
+                    <li>
+                        <p class="prose">{{ m.title }} <b>{{ m.name }}</b>, {{ m.institution }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+{% endmacro %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h3 class="ops-tt c-violet">ORDINARY MEMBERS</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row col-md-12 justify-content-center">
+{{ member_list(members.ordinary) }}
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class=" bg-gray-ns bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h3 class="ops-tt c-green">HONORARY MEMBERS</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row col-md-12 justify-content-center">
+{{ member_list(members.honorary) }}
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h3 class="ops-tt txtcenter c-violet">PASSED-AWAY MEMBERS</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="row col-md-12 justify-content-center">
+{{ member_list(members.passed_away) }}
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+{% endblock %}

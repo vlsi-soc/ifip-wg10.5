@@ -1,0 +1,54 @@
+# Officers page. Each entry needs: name, role, institution, photo (path under img/).
+# To add/replace an officer, just add/edit an entry here - no HTML editing needed.
+
+chair:
+  - name: "Graziano Pravadelli"
+    role: "Chair"
+    institution: "University of Verona, Italy"
+    photo: "img/Prof. Graziano-Pravadelli.jpg"
+
+vice_chairs:
+  - name: "Ibrahim Elfadel"
+    role: "Vice-Chairs"
+    institution: "Khalifa University, Abu Dhabi, UAE"
+    photo: "img/Dr. Ibrahim-Elfadel.jpg"
+  - name: "Victor Grimblatt"
+    role: "Vice-Chairs"
+    institution: "Synopsis, Santiago de Chile, Chile"
+    photo: "img/Mr. Victor-Grimblatt.jpg"
+  - name: "Tiziana Margaria"
+    role: "Vice-Chairs"
+    institution: "University of Limerick, Ireland"
+    photo: "img/Mrs. Tiziana-Margaria.png"
+
+past_chair:
+  - name: "Masahiro Fujita"
+    role: "Past Chair"
+    institution: "University of Tokyo, Japan"
+    photo: "img/Mr. Fujita-Masahiro.jpg"
+
+awards_committee:
+  - name: "Luis Miguel Silveira (chair)"
+    role: "Awards Committee"
+    institution: "Technical University of Lisbon, Portugal"
+    photo: "img/Mr. Luis-Miguel-Silveira.jpg"
+  - name: "Salvador Mir"
+    role: "Awards Committee"
+    institution: "Université Grenoble Alpes, France"
+    photo: "img/Prof. Salvador-Mir.png"
+  - name: "Ricardo Reis"
+    role: "Awards Committee"
+    institution: "University of Porto Alegre, Brazil"
+    photo: "img/Ricarado-Reis.jpg"
+  - name: "Luc Claesen"
+    role: "Awards Committee"
+    institution: "Hasselt University, Belgium"
+    photo: "img/Luc-Claesen.png"
+  - name: "Manfred Glesner"
+    role: "Awards Committee"
+    institution: "Technical University of Darmstadt, Germany"
+    photo: "img/Manfred-Glesner.jpg"
+  - name: "Srinivas Katkoori"
+    role: "Awards Committee"
+    institution: "University of South Florida, USA"
+    photo: "img/srinivas-katkoori.jpg"

@@ -1,0 +1,10 @@
+# Large binaries go through Git LFS instead of being stored as regular git
+# blobs - keeps `git clone`/`git pull` fast even with 90+ meeting minutes
+# and 25+ years of reports attached.
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.doc filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.ppt filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.mhtml filter=lfs diff=lfs merge=lfs -text

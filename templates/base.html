@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ site.meta.title }}</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta property="og:title" content="{{ site.meta.og_title }}">
+        <meta property="og:description" content="{{ site.meta.og_description }}">
+        <meta property="og:type" content="website">
+        <meta name="description" content="{{ site.meta.description }}">
+        <meta name="author" content="{{ site.meta.author }}">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="{{ site.meta.keywords }}">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <!-- Styles -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600">
+        <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Navbar menu -->
+        <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+                <a class="os"> Menu</a>
+            </button>
+            <!-- Navbar links -->
+            <div class="navbar-collapse justify-content-center collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    {% for item in site.nav %}
+                    <li class="nav-item{% if item.page == active_page %} active{% endif %}">
+                        <a{% if item.href == '#footer' %} title="image"{% endif %} class="nav-link os" href="{{ item.href }}"{% if item.external %} target="_blank"{% endif %}>{{ item.label }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Header -->
+        <section class="box-border max-w-4xl mx-auto lg:max-w-6xl xl:px-0 border-b border-gray-200">
+            <div class="px-10 py-10 md:py-20 mx-auto lg:max-w-screen-xl">
+                <div class="flex mb-16 sm:mb-0 items-center">
+                    <div class="w-full md:w-2/3 lg:w-full md:mb-8 md:pr-10">
+                        <h1 class="text-3xl leading-9 mb-0 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl">
+                            {{ site.header.title }}
+                        </h1>
+                        <h2 class="s-title c-green" style="visibility: visible;">
+                                <b>{{ site.header.subtitle }}</b>
+                        </h2>
+                        <p class="text-base text-gray-700 md:text-lg mt-6">
+                            {{ site.header.text }}
+                        </p>
+                    </div>
+                    <div class="mb-6 sm:mx-auto md:block w-4/12">
+                        <img src="img/ifipweb.gif" alt="IFIP logo" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Header -->
+
+        {% block content %}{% endblock %}
+
+        <!-- Footer -->
+        <footer class="footer bg-footer" style="padding-top:80px">
+            <div class="container" id="footer">
+                <div class="col-md-12  txtcenter">
+                    <h5 class="ops-tt c-white">CONTACTS</h5>
+                    <br>
+                    <i class="fa fa-user same-line c-white" aria-hidden="true"></i>
+                    <p class="ops-2t c-gray same-line" style="color:#b3ffb3 !important;"> {{ site.contact.name }}</p>
+                    <br>
+                    <i class="fa fa-envelope same-line c-white" aria-hidden="true"></i>
+                    <p class="ops-2t c-gray same-line">
+                        <a class="ops-tt a-no c-gray" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+                    </p>
+                </div>
+                <hr style="background-color:white">
+                <div class="row col-lg-12 txt-center">
+                    <p class="ops-2t c-gray same-line">Last updated {{ build_date }}</p>
+                </div>
+                <div class="txt-center">
+                    <p class="ops-2t c-gray">© IFIP Working Group 10.5 | All Right Reserved</p>
+                    <br>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer-->
+
+        <!-- Optional JAVASCRIPTS -->
+        <script src="js/wow.min.js"></script>
+        <script> new WOW().init();</script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>

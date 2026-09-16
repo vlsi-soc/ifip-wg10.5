@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="bxshadow-top">
+    <div class="container" style="padding-top:80px; padding-bottom: 15px;">
+      <div class="justify-content-center txtcenter">
+        <h3 class="ops-tt txtcenter c-violet">IFIP WG 10.5 Competency mapping</h3>
+        <p class="text-base text-gray-700 md:text-lg mt-6">
+          {{ competences.intro }}
+        </p>
+        <br>
+      </div>
+    </div>
+
+
+    <div class="container" style="padding-left:0px; padding-right: 0px;">
+      <div class="row" style="padding-top:0px; padding-bottom:0px;">
+        {% for t in competences.topics %}
+        <table class="styled-table">
+            <tr>
+                <th>Topic</th>
+                <td>{{ t.topic }}</td>
+            </tr>
+            <tr>
+                <th>Leaders</th>
+                <td><ul>{% for l in t.leaders %}<li>{{ l }}</li>{% endfor %}</ul></td>
+            </tr>
+            <tr>
+                <th>List of Subtopics</th>
+                <td><ul>{% for s in t.subtopics %}<li>{{ s }}</li>{% endfor %}</ul></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ t.description }}</td>
+            </tr>
+            <tr>
+                <th>List of Members</th>
+                <td><ul>{% for m in t.members %}<li>{{ m }}</li>{% endfor %}</ul></td>
+            </tr>
+        </table>
+        <br> <!-- Add space between tables -->
+        {% endfor %}
+
+      </div>
+      <hr class="solid">
+</div>
+<br>
+<br>
+<br>
+</div>
+{% endblock %}

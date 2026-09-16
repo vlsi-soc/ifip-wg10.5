@@ -1,0 +1,445 @@
+# Meetings page. Add a new meeting by appending an entry to `meetings:` below
+# (any year - entries are grouped and sorted by `date` automatically at build time).
+#
+# Fields per entry:
+#   date          required, YYYY-MM-DD (use day 01 if the exact day is unknown)
+#   location      free text shown before "co-located with ..." (the date is
+#                 appended automatically - do not repeat it in location/text)
+#   event         optional {name, url} of the co-located conference (url may
+#                 be null if there's no link, e.g. an old/defunct conference)
+#   text          optional extra free text (a date RANGE, "Informal meeting",
+#                 a mismatched/virtual-meeting date, etc.) - not a plain
+#                 restatement of `date`
+#   minutes_url   optional path to the minutes file (omit if not available yet)
+#   minutes_label default "see Minutes" if omitted
+#   links         optional list of extra {label, url} downloads (slides, etc.)
+#   note          optional short note shown in italics (e.g. "Minutes not yet published")
+
+upcoming:
+  - date: "2026-10-11"
+    location: "Limassol (Cyprus)"
+    event: {name: "VLSI-SoC 2026", url: "https://vlsi-soc.github.io/vlsi-soc/"}
+
+meetings:
+  - date: "2026-04-21"
+    location: "Verona (IT)"
+    event: {name: "DATE 2026", url: "https://www.date-conference.com/"}
+    minutes_url: "Minutes/2026_04_21_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2025-10-12"
+    location: "Puerto Varas"
+    event: {name: "VLSI-SoC 2025", url: "https://asic-chile.cl/vlsisoc/"}
+    minutes_url: "Minutes/2025_10_12_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2025-03-31"
+    location: "Lyon"
+    event: {name: "DATE 2025", url: "https://www.date-conference.com/"}
+    note: "Minutes not yet published"
+
+  - date: "2024-10-06"
+    location: "Tanger"
+    event: {name: "VLSI-SoC 2024", url: "https://vlsisoc2024.nl/"}
+    minutes_url: "Minutes/2024_10_06_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2024-03-25"
+    location: "Valencia"
+    event: {name: "DATE 2024", url: "https://www.date-conference.com/"}
+    minutes_url: "Minutes/2024_03_25_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2023-10-15"
+    location: "Dubai"
+    event: {name: "VLSI-SOC 2023", url: "https://sites.google.com/view/vlsi-soc2023/home"}
+    minutes_url: "Minutes/2023_10_15_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2023-04-18"
+    location: "Antwerp"
+    event: {name: "DATE 2023", url: "https://www.date-conference.com/"}
+    minutes_url: "Minutes/2023_04_18_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2022-10-02"
+    location: "Patras"
+    event: {name: "VLSI-SoC'2022", url: "https://vlsisoc2022.com/"}
+    text: "IFIP WG 10.5 (virtual) meeting held April 29, 2022"
+    minutes_url: "Minutes/2022_10_02_Minutes_IFIP_WG_10_5.pdf"
+
+  - date: "2021-09-02"
+    location: "On-line meeting"
+    minutes_url: "Minutes/2021_09_02_Minutes_IFIP_WG_10_5.pdf"
+    links:
+      - {label: "Update VLSI-SoC'21", url: "Minutes/Status_August_21_v1.0.pptx"}
+      - {label: "Update VLSI-SoC'22 -3Mo-", url: "Minutes/2021-09-02_Presentation_VLSI-SoC_2022.pptx"}
+
+  - date: "2021-03-03"
+    location: "On-line meeting"
+    minutes_url: "Minutes/2021_03_03_Minutes_IFIP_WG_10_5.pdf"
+    links:
+      - {label: "Download Presentation", url: "Minutes/Meeting_slides_03_03_21.pdf"}
+
+  - date: "2020-10-01"
+    location: "Salt Lake City"
+    event: {name: "VLSI-SoC 2020", url: "https://vlsisoc2020.eng.utah.edu/"}
+
+  - date: "2019-10-06"
+    location: "Cuzco"
+    event: {name: "VLSI-SoC 2019", url: "https://vlsi-soc.pe/"}
+
+  - date: "2019-06-05"
+    location: "Las Vegas"
+    event: {name: "DAC 2019", url: "http://www.dac.com"}
+
+  - date: "2019-03-01"
+    location: "Florence"
+    event: {name: "DATE 2019", url: "http://www.date-conference.com"}
+    minutes_url: "Minutes/2019-03-27-Firenze.htm"
+
+  - date: "2018-10-07"
+    location: "Verona"
+    event: {name: "VLSI-SOC 2018", url: "http://vlsi-soc.di.univr.it/"}
+    minutes_url: "Minutes/2018-10-07-Verona.htm"
+
+  - date: "2018-06-01"
+    location: "San Francisco"
+    event: {name: "DAC 2018", url: "http://www.dac.com"}
+    minutes_url: "Minutes/2018-06-25-SanFransisco.html"
+
+  - date: "2018-03-01"
+    location: "Dresden"
+    event: {name: "DATE 2018", url: "http://www.date-conference.com"}
+    minutes_url: "Minutes/2018-03-21-Dresden.html"
+
+  - date: "2017-10-23"
+    location: "Abu Dhabi, UAE"
+    event: {name: "VLSI-SOC 2017", url: "http://www.vlsi-soc.com/"}
+    text: "October 23-25"
+    minutes_url: "Minutes/2017-10-22_Minutes_IFIP_WG_10_5.html"
+
+  - date: "2017-06-18"
+    location: "Austin, TX, USA"
+    event: {name: "DAC 2017", url: "http://www.dac.com"}
+    text: "June 18-22"
+    minutes_url: "Minutes/2017_06_19_Minutes_IFIP_WG_10_5.html"
+
+  - date: "2017-03-29"
+    location: "Lausanne, Switzerland"
+    event: {name: "DATE 2017", url: "http://www.date-conference.com"}
+    text: "Wednesday"
+    minutes_url: "Minutes/2017_04_29_Minutes_IFIP_WG_10_5Fujita.html"
+
+  - date: "2016-09-27"
+    location: "VLSI-SoC 2016, Tallinn, Estonia"
+    event: {name: "DAC 2016", url: "http://www.dac.com"}
+    minutes_url: "Minutes/2016_09_27_Minutes_IFIP_WG_10_5.html"
+
+  - date: "2016-03-16"
+    location: "Convention Center, Dresden, Germany"
+    event: {name: "DATE' 2016", url: "http://www.date-conference.com"}
+    minutes_url: "Minutes/2016_03_16_Minutes_IFIP_WG_10_5.pdf"
+    minutes_label: "Download PDF minutes"
+    links:
+      - {label: "VLSI-SoC16__at__IFIP-DATE16.ppt file", url: "Minutes/2016_03_16_minutes_fichiers/VLSI-SoC16__at__IFIP-DATE16.ppt"}
+      - {label: "VLSI_SoC_2017_AbuDhabi Update_DATE2016.pptx", url: "Minutes/2016_03_16_minutes_fichiers/VLSI_SoC_2017_AbuDhabi_Update_DATE2016.pptx"}
+
+  - date: "2015-10-01"
+    location: "Convention Center, Daejeon, Korea"
+    event: {name: "VLSI-SoC 2015", url: "http://www.vlsi-soc.com/"}
+    minutes_url: "Minutes/2015_10_4_Minutes_IFIP.htm"
+
+  - date: "2015-06-09"
+    location: "Moscone Center, San Francisco, USA"
+    event: {name: "DAC 2015", url: "http://www.dac.com/"}
+    minutes_url: "Minutes/2015_06_09 Minutes.htm"
+
+  - date: "2015-03-10"
+    location: "Grenoble, France"
+    event: {name: "DATE 2015", url: "http://www.date-conference.com/"}
+    minutes_url: "Minutes/2015_03_10_Minutes_IFIP_WG_10_5.htm"
+
+  - date: "2014-10-01"
+    location: "Playa del Carmen, Mexico"
+    event: {name: "VLSI-SoC 2014", url: "http://xilonen.inaoep.mx/vlsi-soc2014/"}
+    minutes_url: "Minutes/2014_10_05_Minutes_IFIP_WG_10_5.htm"
+
+  - date: "2014-06-01"
+    location: "San Francisco, USA"
+    event: {name: "DAC 2014", url: null}
+    minutes_url: "Minutes/2014-06-04-San-Francisco.html"
+
+  - date: "2014-03-01"
+    location: "Dresden, Germany"
+    event: {name: "DATE'14", url: "http://www.date-conference.com/date14"}
+    minutes_url: "Minutes/2014-03-25-Dresden.htm"
+
+  - date: "2013-10-01"
+    location: "Istanbul, Turkey"
+    event: {name: "VLSI-SoC'2013", url: "http://vlsisoc2013.ozyegin.edu.tr/"}
+    minutes_url: "Minutes/2013-10-08_IFIP_Istanbul_minutes.html"
+
+  - date: "2013-06-01"
+    location: "Austin, TX, USA"
+    event: {name: "DAC 2013", url: null}
+    minutes_url: "Minutes/2013-06-03_Minutes_IFIP_WG10_5.htm"
+
+  - date: "2013-03-01"
+    location: "Grenoble, France"
+    event: {name: "DATE 2013", url: "http://www.date-conference.com/date13/"}
+    minutes_url: "Minutes/2013-03-18-Grenoble.htm"
+
+  - date: "2012-10-01"
+    location: "Santa Cruz, USA"
+    event: {name: "VLSI-SoC 2012", url: "http://vlsisoc2012.soe.ucsc.edu/"}
+    minutes_url: "Minutes/2012-10-SantaCruz.htm"
+
+  - date: "2012-06-01"
+    location: "San Francisco, USA"
+    event: {name: "DAC'12", url: null}
+    minutes_url: "Minutes/2012-06-SanFrancisco.htm"
+
+  - date: "2012-03-01"
+    location: "Dresden, Germany"
+    event: {name: "DATE'12", url: null}
+    minutes_url: "Minutes/Minutes-Dresden12.html"
+
+  - date: "2011-10-01"
+    location: "Hong Kong, China"
+    event: {name: "VLSI-SoC'11", url: null}
+    minutes_url: "Minutes/Minutes-HongKong11.html"
+
+  - date: "2011-06-08"
+    location: "San Diego, USA"
+    event: {name: "DAC'11", url: null}
+    minutes_url: "Minutes/Minutes-SanDiego11.html"
+
+  - date: "2011-03-01"
+    location: "Grenoble, France"
+    event: {name: "DATE'11", url: null}
+    minutes_url: "Minutes/minutes-grenoble11.htm"
+
+  - date: "2010-09-01"
+    location: "Madrid, Spain"
+    event: {name: "VLSI-SoC'10", url: null}
+    minutes_url: "Minutes/Minutes-Madrid10.html"
+    minutes_label: "see minutes here"
+
+  - date: "2010-03-01"
+    location: "Dresden, Germany"
+    event: {name: "DATE'10", url: null}
+    minutes_url: "Minutes/Minutes-IDresden2010.html"
+    minutes_label: "see minutes here"
+
+  - date: "2009-10-01"
+    location: "Florianópolis, Brazil"
+    event: {name: "VLSI-SoC'09", url: null}
+    minutes_url: "Minutes/Minutes-Florianopolis09.html"
+    minutes_label: "see minutes here"
+
+  - date: "2009-07-01"
+    location: "San Francisco, USA"
+    event: {name: "DAC'09", url: null}
+    minutes_url: "Minutes/Minutes-SanFrancisco09.html"
+    minutes_label: "see minutes here"
+
+  - date: "2009-04-01"
+    location: "Nice, France"
+    event: {name: "DATE'09", url: null}
+    minutes_url: "Minutes/Minutes-Nice09.html"
+    minutes_label: "see minutes here"
+
+  - date: "2008-10-12"
+    location: "Rhodes, Greece"
+    event: {name: "VLSI-SoC'08", url: null}
+    minutes_url: "Minutes/Minutes-Rhodes08.html"
+    minutes_label: "see minutes here"
+
+  - date: "2008-03-10"
+    location: "Munich, Germany"
+    event: {name: "DATE'08", url: null}
+    minutes_url: "Minutes/Minutes-Munich08.html"
+    minutes_label: "see minutes here"
+
+  - date: "2007-10-15"
+    location: "Atlanta, USA"
+    event: {name: "VLSI-SoC'07", url: null}
+    minutes_url: "Minutes/Minutes-Atlanta07.html"
+    minutes_label: "see minutes here"
+
+  - date: "2007-04-16"
+    location: "Nice, France"
+    event: {name: "DATE'07", url: null}
+    minutes_url: "Minutes/Minutes-Nice07.html"
+    minutes_label: "see minutes here"
+
+  - date: "2006-10-16"
+    location: "Nice, France"
+    event: {name: "VLSI-SoC'06", url: null}
+    minutes_url: "Minutes/Minutes-SanFrancisco06.html"
+    minutes_label: "see minutes here"
+
+  - date: "2006-07-25"
+    location: "San Francisco, USA"
+    event: {name: "DAC'06", url: null}
+    minutes_url: "Minutes/Minutes-SanFrancisco06.html"
+    minutes_label: "see minutes here"
+
+  - date: "2006-03-07"
+    location: "Munich, Germany"
+    event: {name: "DATE'06", url: null}
+    minutes_url: "Minutes/Minutes-Munich06.html"
+    minutes_label: "see minutes here"
+
+  - date: "2005-10-19"
+    location: "Perth, Australia"
+    event: {name: "VLSI-SoC'05", url: null}
+    minutes_url: "Minutes/Minutes-Perth05.html"
+    minutes_label: "see minutes here"
+
+  - date: "2005-03-07"
+    location: "Munich, Germany"
+    event: {name: "DATE'05", url: null}
+    minutes_url: "Minutes/Minutes-Munich05.html"
+    minutes_label: "see minutes here"
+
+  - date: "2004-08-26"
+    location: "Toulouse, France"
+    event: {name: "IFIP WCC'04", url: null}
+    minutes_url: "Minutes/Minutes-Toulouse.html"
+    minutes_label: "see minutes here"
+
+  - date: "2003-11-30"
+    location: "Darmstadt, Germany"
+    event: {name: "VLSI-SoC'03", url: null}
+    minutes_url: "Minutes/Minutes-Darmstadt.html"
+    minutes_label: "see minutes here"
+
+  - date: "2003-06-06"
+    location: "Anaheim, USA"
+    event: {name: "DAC'03", url: null}
+    minutes_url: "Minutes/Minutes-Irvine.html"
+    minutes_label: "see minutes here"
+
+  - date: "2003-03-07"
+    location: "Munich, Germany"
+    event: {name: "DATE'03", url: null}
+    minutes_url: "Minutes/Minutes-Munich2003.html"
+    minutes_label: "see minutes here"
+
+  - date: "2002-06-12"
+    location: "New Orleans"
+    event: {name: "DAC'02", url: null}
+
+  - date: "2002-03-04"
+    location: "Paris"
+    event: {name: "DATE'02", url: null}
+    minutes_url: "Minutes/minuta_paris.html"
+    minutes_label: "see minutes here"
+
+  - date: "2001-12-05"
+    location: "Montpellier"
+    event: {name: "VLSI-SoC'01", url: null}
+    minutes_url: "Minutes/minuta_montpellier.html"
+    minutes_label: "see minutes here"
+
+  - date: "2001-09-10"
+    location: "Pirenópolis, Brazil"
+    event: {name: "SBCCI'01", url: null}
+    minutes_url: "Minutes/minuta_pirenopolis.html"
+    minutes_label: "see minutes here"
+
+  - date: "2001-06-20"
+    location: "Las Vegas"
+    event: {name: "DAC'2001", url: null}
+    text: "Informal meeting"
+
+  - date: "2001-03-12"
+    location: "Munich (Germany)"
+    minutes_url: "Minutes/min010312.html"
+    minutes_label: "see minutes here"
+
+  - date: "2000-08-23"
+    location: "Beijing (China)"
+    minutes_url: "Minutes/min000823.html"
+    minutes_label: "see minutes here"
+
+  - date: "2000-03-10"
+    location: "San Jose (USA)"
+    minutes_url: "Minutes/min000310.html"
+    minutes_label: "see minutes here"
+
+  - date: "1999-12-03"
+    location: "Lisbon (Portugal)"
+
+  - date: "1999-06-22"
+    location: "New Orleans (USA)"
+    minutes_url: "Minutes/min990622.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1999-03-12"
+    location: "Munich (Germany)"
+    event: {name: "DATE'99", url: null}
+    text: "March 12-13"
+    minutes_url: "Minutes/min0312.html"
+    minutes_label: "see minutes here"
+
+  - date: "1998-11-07"
+    location: "Stanford (USA)"
+
+  - date: "1998-06-18"
+    location: "San Francisco (USA)"
+    event: {name: "DAC98", url: null}
+    minutes_url: "Minutes/min0618.html"
+    minutes_label: "see minutes here"
+
+  - date: "1998-02-01"
+    location: "Paris (France)"
+    event: {name: "DATE'98", url: "http://www.date-conference.com/"}
+    minutes_url: "Minutes/min0226.html"
+    minutes_label: "see minutes here"
+
+  - date: "1997-08-01"
+    location: "Canela (Brazil)"
+    event: {name: "VLSI'97", url: null}
+
+  - date: "1997-04-22"
+    location: "Toledo"
+    event: {name: "CHDL'97", url: "http://www.it.uc3m.es/~ifip/chdl97/"}
+    minutes_url: "Minutes/minutes4-97.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1996-11-11"
+    location: "Santa Clara"
+    event: {name: "ICCAD'96", url: null}
+    minutes_url: "Minutes/minutes11-96.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1996-09-01"
+    location: "Geneva"
+    event: {name: "EuroDAC'96", url: null}
+    text: "Informal meeting"
+
+  - date: "1996-03-12"
+    location: "Paris"
+    event: {name: "EDT&96", url: null}
+    minutes_url: "Minutes/minutes3-96.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1995-09-20"
+    location: "Brighton"
+    event: {name: "EuroDAC'95", url: null}
+    text: "Informal meeting"
+
+  - date: "1995-09-01"
+    location: "Chiba"
+    event: {name: "ACV'95", url: null}
+    minutes_url: "Minutes/minutes8-95.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1995-03-09"
+    location: "Paris"
+    event: {name: "ED&95", url: null}
+    minutes_url: "Minutes/minutes3-95.pdf"
+    minutes_label: "see minutes here"
+
+  - date: "1994-09-24"
+    location: "Grenoble"
+    event: {name: "EuroDAC'94", url: null}
+    minutes_url: "Minutes/minutes9-94.pdf"
+    minutes_label: "see minutes here"

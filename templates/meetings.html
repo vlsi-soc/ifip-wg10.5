@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% macro event_link(e) %}{% if e.url %}<a href="{{ e.url }}" target="_blank"><u>{{ e.name }}</u></a>{% else %}{{ e.name }}{% endif %}{% endmacro %}
+{% block content %}
+        <div class="bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-violet">UPCOMING MEETINGS</h2>
+                    <br>
+                    <br>
+                    <div class="row col-md-12 justify-content-center">
+                        <ul style="text-align:left">
+                          {% for m in meetings.upcoming %}
+                          <li class="prose">
+                            {{ m.location }}, {{ m.date | date_euro }}{% if m.event %}, co-located with <font color="#0000AA">{{ event_link(m.event) }}</font>{% endif %}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="bg-gray-ns bxshadow-top">
+            <div class="container" style="padding-top:80px">
+                <div class="justify-content-center txtcenter">
+                    <h2 class="ops-tt txtcenter c-green">PAST MEETINGS</h2>
+                </div>
+                <!-- The Timeline -->
+                <div id="timeline">
+                    <div>
+                      {% for group in meetings_by_year %}
+                      <section class="year">
+                          <h3>{{ group.year }}</h3>
+                          <section>
+                              <ul>
+                                {% for m in group.entries %}
+                                <li class="prose">
+                                    {{ m.location }}{% if m.event %}, co-located with {{ event_link(m.event) }}{% endif %}{% if m.text %}, {{ m.text }}{% endif %} &mdash; {{ m.date | date_long }}
+                                    {%- if m.minutes_url %} (<a href="{{ m.minutes_url }}" target="_blank"><u>{{ m.minutes_label or "see Minutes" }}</u></a>{% for link in m.links %}, <a href="{{ link.url }}" target="_blank"><u>{{ link.label }}</u></a>{% endfor %})
+                                    {%- elif m.note %} (<i>{{ m.note }}</i>)
+                                    {%- endif %}
+                                </li>
+                                {% endfor %}
+                              </ul>
+                          </section>
+                      </section>
+                      {% endfor %}
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+{% endblock %}
