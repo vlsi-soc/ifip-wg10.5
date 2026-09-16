@@ -117,6 +117,8 @@ def build():
         m["year"] = parse_date(m["date"]).year
     meetings_by_year = group_by_year(meetings["meetings"], date_key="date")
 
+    for r in reports["reports"]:
+        r["icon"] = "fa-file-word" if r["file"].lower().endswith((".doc", ".docx")) else "fa-file-pdf"
     reports_by_year = group_by_year(reports["reports"])
     past_sponsored_by_year = group_by_year(events["past_sponsored"])
     past_cosponsored_by_year = group_by_year(events["past_cosponsored"])

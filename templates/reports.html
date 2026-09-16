@@ -13,12 +13,13 @@
                           <h3>{{ group.year }}</h3>
                           <section>
                               <ul>
-                                  {% for r in group.entries %}
                                   <li class="prose">
-                                      Link to report
-                                      <a href="{{ r.file }}" target="_blank"><u> {{ r.label }}</u></a>
+                                      <div class="report-links">
+                                          {% for r in group.entries %}
+                                          <a class="report-link" href="{{ r.file }}" target="_blank"><i class="fa {{ r.icon }}" aria-hidden="true"></i>{{ r.label }}</a>
+                                          {% endfor %}
+                                      </div>
                                   </li>
-                                  {% endfor %}
                               </ul>
                           </section>
                       </section>

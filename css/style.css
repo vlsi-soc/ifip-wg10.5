@@ -636,3 +636,33 @@ hr.solid {
     line-height: 20px;
     margin: 0;
 }
+
+/* Reports page: report links as small badges instead of a plain sentence */
+.report-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.report-link {
+    align-items: center;
+    background: #f7f4f9;
+    border: 1px solid #e3d9ea;
+    border-radius: 8px;
+    color: #835095;
+    display: inline-flex;
+    font-size: 14px;
+    padding: 8px 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.report-link i {
+    margin-right: 8px;
+}
+
+.report-link:hover {
+    background: #835095;
+    border-color: #835095;
+    color: #fff;
+}
