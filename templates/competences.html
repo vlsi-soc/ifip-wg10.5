@@ -11,40 +11,26 @@
       </div>
     </div>
 
-
-    <div class="container" style="padding-left:0px; padding-right: 0px;">
-      <div class="row" style="padding-top:0px; padding-bottom:0px;">
+    <div class="container" style="padding-bottom: 40px;">
+      <div class="competence-grid">
         {% for t in competences.topics %}
-        <table class="styled-table">
-            <tr>
-                <th>Topic</th>
-                <td>{{ t.topic }}</td>
-            </tr>
-            <tr>
-                <th>Leaders</th>
-                <td><ul>{% for l in t.leaders %}<li>{{ l }}</li>{% endfor %}</ul></td>
-            </tr>
-            <tr>
-                <th>List of Subtopics</th>
-                <td><ul>{% for s in t.subtopics %}<li>{{ s }}</li>{% endfor %}</ul></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ t.description }}</td>
-            </tr>
-            <tr>
-                <th>List of Members</th>
-                <td><ul>{% for m in t.members %}<li>{{ m }}</li>{% endfor %}</ul></td>
-            </tr>
-        </table>
-        <br> <!-- Add space between tables -->
+        <div class="competence-card">
+          <h4 class="competence-title">{{ t.topic }}</h4>
+          <p class="competence-leaders"><i class="fa fa-star" aria-hidden="true"></i>Led by {{ t.leaders | join(", ") }}</p>
+          <div class="competence-tags">
+            {% for s in t.subtopics %}<span class="competence-tag">{{ s }}</span>{% endfor %}
+          </div>
+          <p class="competence-description">{{ t.description }}</p>
+          <div class="competence-members">
+            <span class="competence-members-label"><i class="fa fa-users" aria-hidden="true"></i>Members</span>
+            <p>{{ t.members | join(", ") }}</p>
+          </div>
+        </div>
         {% endfor %}
-
       </div>
-      <hr class="solid">
-</div>
-<br>
-<br>
-<br>
-</div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
 {% endblock %}

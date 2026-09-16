@@ -549,26 +549,90 @@ hr.solid {
         padding-top: 10px;
     }
 }
-/* From here */
-table.styled-table {
-		width: 100%;
-		border-collapse: collapse;
-		margin: 20px 0;
-		font-size: 18px;
-		text-align: left;
+/* Competences page: card grid (replaces the old vertical "styled-table" layout) */
+.competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 28px;
+    margin: 10px 0 20px;
 }
-th, td {
-		padding: 12px;
-		border: 1px solid #ddd;
-		color: black;
+
+.competence-card {
+    background: #fff;
+    border-radius: 10px;
+    border-top: 4px solid #835095;
+    box-shadow: 10px 10px 15px rgb(73 78 92 / 10%);
+    padding: 28px 30px;
+    text-align: left;
+    transition: 0.3s;
 }
-th {
-		background-color: #4CAF50;
-		color: white;
+
+.competence-card:hover {
+    box-shadow: 10px 10px 22px rgb(73 78 92 / 18%);
 }
-tr:nth-child(even) {
-		background-color: #f2f2f2;
+
+.competence-title {
+    color: #835095;
+    font-family: "Open Sans";
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 10px;
 }
-ul {
-		padding-left: 20px;
+
+.competence-leaders {
+    color: #5e5e5e;
+    font-size: 14px;
+    margin: 0 0 14px;
+}
+
+.competence-leaders i {
+    color: #835095;
+    margin-right: 6px;
+}
+
+.competence-tags {
+    margin: 0 0 16px;
+}
+
+.competence-tag {
+    background: #f1ebf4;
+    border-radius: 999px;
+    color: #835095;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 6px 6px 0;
+    padding: 4px 12px;
+}
+
+.competence-description {
+    color: #323933;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 18px;
+}
+
+.competence-members {
+    border-top: 1px solid #ececec;
+    padding-top: 14px;
+}
+
+.competence-members-label {
+    color: #006622;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.competence-members-label i {
+    margin-right: 6px;
+}
+
+.competence-members p {
+    color: #5e5e5e;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
 }
