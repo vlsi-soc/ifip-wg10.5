@@ -666,3 +666,185 @@ hr.solid {
     border-color: #835095;
     color: #fff;
 }
+
+/* Home page: give the existing "aims" boxes the same accent border as the
+   newer cards (competences/officers) so the whole site reads as one system */
+.box {
+    border-top: 4px solid #835095;
+}
+
+/* Officers page: photo + role cards (grid replaces the old bootstrap
+   col-md-16 rows, which was never a valid Bootstrap column count) */
+.officer-grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 20px 0 40px;
+}
+
+.officer-card {
+    background: #fff;
+    border-radius: 10px;
+    border-top: 4px solid #835095;
+    box-shadow: 10px 10px 15px rgb(73 78 92 / 10%);
+    padding: 28px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.officer-card:hover {
+    box-shadow: 10px 10px 22px rgb(73 78 92 / 18%);
+}
+
+.officer-photo {
+    border: 3px solid #f1ebf4;
+    border-radius: 9999px;
+    display: block;
+    height: 84px;
+    margin: 0 auto 14px;
+    object-fit: cover;
+    width: 84px;
+}
+
+.officer-role {
+    background: #f1ebf4;
+    border-radius: 999px;
+    color: #835095;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    padding: 4px 14px;
+    text-transform: uppercase;
+}
+
+.officer-name, .officer-institution {
+    margin: 0 0 4px;
+}
+
+.officer-name {
+    color: #323933;
+    font-size: 15px;
+}
+
+.officer-institution {
+    color: #7a7a7a;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.officer-name i, .officer-institution i {
+    color: #835095;
+    margin-right: 6px;
+}
+
+/* Members page: dense grid of name/institution cards, color-coded by
+   section, instead of a single-column bullet list */
+.member-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin: 10px 0 20px;
+}
+
+.member-card {
+    background: #fff;
+    border-left: 3px solid #835095;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px rgb(73 78 92 / 8%);
+    padding: 14px 16px;
+    text-align: left;
+}
+
+.member-card--green {
+    border-left-color: #006622;
+}
+
+.member-card--gray {
+    border-left-color: #b3b3b3;
+}
+
+.member-name {
+    color: #323933;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 2px;
+}
+
+.member-institution {
+    color: #7a7a7a;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Shared "link" look for meeting/event names - replaces the old inline
+   <font color="#0000AA">/<u> tags with a class so hover state is consistent */
+.event-link {
+    color: #835095;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.event-link:not(.event-link--plain):hover {
+    text-decoration: underline;
+}
+
+/* Meetings page: each entry gets a bold heading line, a muted date, and
+   minutes/slides as .report-link badges instead of parenthetical text */
+.meeting-heading {
+    color: #323933;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.meeting-heading .event-link {
+    margin-left: 4px;
+}
+
+.meeting-note {
+    color: #7a7a7a;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.meeting-meta {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.meeting-date {
+    color: #999;
+    font-size: 12px;
+}
+
+.meeting-date i {
+    margin-right: 5px;
+}
+
+.meeting-pending {
+    color: #a97a3f;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.meeting-pending i {
+    margin-right: 5px;
+}
+
+/* Events page: bold linked heading + muted description line */
+.event-heading {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.event-description {
+    color: #5e5e5e;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}

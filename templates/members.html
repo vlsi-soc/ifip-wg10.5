@@ -1,12 +1,13 @@
 {% extends "base.html" %}
-{% macro member_list(members) %}
-                <ul style="color:#477ED2;text-align:left; margin-left: 1%;">
+{% macro member_grid(members, variant) %}
+                <div class="member-grid">
                     {% for m in members %}
-                    <li>
-                        <p class="prose">{{ m.title }} <b>{{ m.name }}</b>, {{ m.institution }}</p>
-                    </li>
+                    <div class="member-card{% if variant %} member-card--{{ variant }}{% endif %}">
+                        <p class="member-name">{{ m.title }} {{ m.name }}</p>
+                        <p class="member-institution">{{ m.institution }}</p>
+                    </div>
                     {% endfor %}
-                </ul>
+                </div>
 {% endmacro %}
 {% block content %}
         <div class="bxshadow-top">
@@ -15,10 +16,7 @@
                     <h3 class="ops-tt c-violet">ORDINARY MEMBERS</h3>
                     <br>
                 </div>
-            </div>
-            <div class="row col-md-12 justify-content-center">
-{{ member_list(members.ordinary) }}
-                <br>
+{{ member_grid(members.ordinary) }}
                 <br>
                 <br>
             </div>
@@ -30,10 +28,7 @@
                     <h3 class="ops-tt c-green">HONORARY MEMBERS</h3>
                     <br>
                 </div>
-            </div>
-            <div class="row col-md-12 justify-content-center">
-{{ member_list(members.honorary) }}
-                <br>
+{{ member_grid(members.honorary, "green") }}
                 <br>
                 <br>
             </div>
@@ -45,10 +40,7 @@
                     <h3 class="ops-tt txtcenter c-violet">PASSED-AWAY MEMBERS</h3>
                     <br>
                 </div>
-            </div>
-            <div class="row col-md-12 justify-content-center">
-{{ member_list(members.passed_away) }}
-                <br>
+{{ member_grid(members.passed_away, "gray") }}
                 <br>
                 <br>
             </div>
