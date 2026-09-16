@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% macro event_link(e) %}{% if e.url %}<a href="{{ e.url }}" target="_blank"><u>{{ e.name }}</u></a>{% else %}<font color="#0000AA">{{ e.name }}</font>{% endif %}{% endmacro %}
+{% macro event_link(e) %}{% if e.url %}<a class="event-link" href="{{ e.url }}" target="_blank">{{ e.name }}</a>{% else %}<span class="event-link event-link--plain">{{ e.name }}</span>{% endif %}{% endmacro %}
 {% block content %}
         <div class="bxshadow-top">
             <div class="container" style="padding-top:80px">
@@ -10,7 +10,7 @@
                     <div class="row col-md-12 justify-content-center">
                         <ul style="text-align:left; margin-left: 1%;">
                           <li class="prose">
-                              <font color="#0000AA"><a href="{{ site.upcoming_event.url }}">{{ site.upcoming_event.name }}</a></font>
+                              <a class="event-link" href="{{ site.upcoming_event.url }}">{{ site.upcoming_event.name }}</a>
                               - {{ site.upcoming_event.location }}, {{ site.upcoming_event.date_text }}
                           </li>
                         </ul>
@@ -37,11 +37,10 @@
                                 <ul>
                                   {% for e in group.entries %}
                                   <li class="prose">
-                                      {{ event_link(e) }}
-                                      - {{ e.text }}{% if e.extra_link %}
-                                      <a href="{{ e.extra_link.url }}" target="_blank"><u>{{ e.extra_link.label }}</u></a>.{% endif %}
+                                      <div class="event-heading">{{ event_link(e) }}</div>
+                                      <div class="event-description">{{ e.text }}</div>
+                                      {% if e.extra_link %}<a class="report-link" href="{{ e.extra_link.url }}" target="_blank"><i class="fa fa-file-alt" aria-hidden="true"></i>{{ e.extra_link.label }}</a>{% endif %}
                                   </li>
-                                  {% if not loop.last %}<br>{% endif %}
                                   {% endfor %}
                                 </ul>
                             </section>
@@ -70,8 +69,8 @@
                                 <ul>
                                     {% for e in group.entries %}
                                     <li class="prose">
-                                        {{ event_link(e) }}
-                                        - {{ e.text }}
+                                        <div class="event-heading">{{ event_link(e) }}</div>
+                                        <div class="event-description">{{ e.text }}</div>
                                     </li>
                                     {% endfor %}
                                 </ul>

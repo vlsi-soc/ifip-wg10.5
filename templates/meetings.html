@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% macro event_link(e) %}{% if e.url %}<a href="{{ e.url }}" target="_blank"><u>{{ e.name }}</u></a>{% else %}{{ e.name }}{% endif %}{% endmacro %}
+{% macro event_link(e) %}{% if e.url %}<a class="event-link" href="{{ e.url }}" target="_blank">{{ e.name }}</a>{% else %}<span class="event-link event-link--plain">{{ e.name }}</span>{% endif %}{% endmacro %}
 {% block content %}
         <div class="bxshadow-top">
             <div class="container" style="padding-top:80px">
@@ -11,7 +11,7 @@
                         <ul style="text-align:left">
                           {% for m in meetings.upcoming %}
                           <li class="prose">
-                            {{ m.location }}, {{ m.date | date_euro }}{% if m.event %}, co-located with <font color="#0000AA">{{ event_link(m.event) }}</font>{% endif %}
+                            {{ m.location }}, {{ m.date | date_euro }}{% if m.event %}, co-located with {{ event_link(m.event) }}{% endif %}
                           </li>
                           {% endfor %}
                         </ul>
@@ -37,10 +37,14 @@
                               <ul>
                                 {% for m in group.entries %}
                                 <li class="prose">
-                                    {{ m.location }}{% if m.event %}, co-located with {{ event_link(m.event) }}{% endif %}{% if m.text %}, {{ m.text }}{% endif %} &mdash; {{ m.date | date_long }}
-                                    {%- if m.minutes_url %} (<a href="{{ m.minutes_url }}" target="_blank"><u>{{ m.minutes_label or "see Minutes" }}</u></a>{% for link in m.links %}, <a href="{{ link.url }}" target="_blank"><u>{{ link.label }}</u></a>{% endfor %})
-                                    {%- elif m.note %} (<i>{{ m.note }}</i>)
-                                    {%- endif %}
+                                    <div class="meeting-heading">{{ m.location }}{% if m.event %}, co-located with {{ event_link(m.event) }}{% endif %}</div>
+                                    {% if m.text %}<div class="meeting-note">{{ m.text }}</div>{% endif %}
+                                    <div class="meeting-meta">
+                                        <span class="meeting-date"><i class="fa fa-calendar-alt" aria-hidden="true"></i>{{ m.date | date_long }}</span>
+                                        {% if m.minutes_url %}<a class="report-link" href="{{ m.minutes_url }}" target="_blank"><i class="fa fa-file-alt" aria-hidden="true"></i>{{ m.minutes_label or "see Minutes" }}</a>{% endif %}
+                                        {% for link in m.links %}<a class="report-link" href="{{ link.url }}" target="_blank"><i class="fa fa-file-powerpoint" aria-hidden="true"></i>{{ link.label }}</a>{% endfor %}
+                                        {% if m.note %}<span class="meeting-pending"><i class="fa fa-clock" aria-hidden="true"></i>{{ m.note }}</span>{% endif %}
+                                    </div>
                                 </li>
                                 {% endfor %}
                               </ul>
