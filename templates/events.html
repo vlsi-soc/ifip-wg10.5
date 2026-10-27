@@ -10,8 +10,12 @@
                     <div class="row col-md-12 justify-content-center">
                         <ul style="text-align:left; margin-left: 1%;">
                           <li class="prose">
+                              {% if site.upcoming_event %}
                               <a class="event-link" href="{{ site.upcoming_event.url }}">{{ site.upcoming_event.name }}</a>
                               - {{ site.upcoming_event.location }}, {{ site.upcoming_event.date_text }}
+                              {% else %}
+                              To be announced
+                              {% endif %}
                           </li>
                         </ul>
                     </div>

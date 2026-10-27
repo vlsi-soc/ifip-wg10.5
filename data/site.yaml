@@ -23,11 +23,8 @@ contact:
 
 # Shown on both index.html and events.html "Future events" sections so the
 # two pages can never drift out of sync again (they had gone stale before).
-upcoming_event:
-  name: "VLSI-SoC 2026"
-  url: "https://vlsi-soc.github.io/vlsi-soc/"
-  location: "Limassol, Cyprus"
-  date_text: "11-14 October 2026"
+# Set to null when the next event isn't known yet ("To be announced" is shown).
+upcoming_event: null
 
 nav:
   - label: "Home"

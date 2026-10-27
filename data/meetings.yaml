@@ -15,12 +15,14 @@
 #   links         optional list of extra {label, url} downloads (slides, etc.)
 #   note          optional short note shown in italics (e.g. "Minutes not yet published")
 
-upcoming:
+upcoming: []
+
+meetings:
   - date: "2026-10-11"
     location: "Limassol (Cyprus)"
     event: {name: "VLSI-SoC 2026", url: "https://vlsi-soc.github.io/vlsi-soc/"}
+    note: "Minutes not yet published"
 
-meetings:
   - date: "2026-04-21"
     location: "Verona (IT)"
     event: {name: "DATE 2026", url: "https://www.date-conference.com/"}

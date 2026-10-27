@@ -7,6 +7,8 @@
 # with the right `year`; entries are grouped and sorted automatically.
 
 past_sponsored:
+  - {year: 2026, name: "VLSI-SoC'2026", url: "https://vlsi-soc.github.io/vlsi-soc/", text: "34th IFIP/IEEE International Conference on Very Large Scale Integration, October 11-14, Limassol, Cyprus"}
+
   - {year: 2025, name: "VLSI-SoC'2025", url: "https://asic-chile.cl/vlsisoc/", text: "33rd IFIP/IEEE International Conference on Very Large Scale Integration, October 12-15, Puerto Varas, Chile"}
 
   - {year: 2024, name: "VLSI-SoC'2024", url: "https://vlsisoc2024.nl/index.php", text: "32th IFIP/IEEE International Conference on Very Large Scale Integration, October 6-9, Tanger, Morocco"}

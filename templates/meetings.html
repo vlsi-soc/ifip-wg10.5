@@ -13,6 +13,8 @@
                           <li class="prose">
                             {{ m.location }}, {{ m.date | date_euro }}{% if m.event %}, co-located with {{ event_link(m.event) }}{% endif %}
                           </li>
+                          {% else %}
+                          <li class="prose">To be announced</li>
                           {% endfor %}
                         </ul>
                     </div>
